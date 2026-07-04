@@ -14,7 +14,8 @@
 // }
 
 document.getElementById("handleADD").addEventListener("click",(event)=>{
-    console.log("hello Boxx")
+    const inputValue = document.getElementById("search-box").value;
+    console.log(inputValue);
 });
 
 // const handleSearch = (event) => {
