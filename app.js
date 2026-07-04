@@ -15,7 +15,16 @@
 
 document.getElementById("handleADD").addEventListener("click",(event)=>{
     const inputValue = document.getElementById("search-box").value;
-    console.log(inputValue);
+
+    const container = document.getElementById("comment_container");2
+
+    const p = document.createElement("p");
+    p.innerText = inputValue;
+
+    container.appendChild(p);
+
+    document.getElementById("search-box").value = "";
+
 });
 
 // const handleSearch = (event) => {
