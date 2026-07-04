@@ -13,6 +13,10 @@
 //     }
 // }
 
-document.getElementById("handelADD").addEventListener("click",(event)=>{
-    console.log("hello Boxx")
-})
+// document.getElementById("handleADD").addEventListener("click",(event)=>{
+//     console.log("hello Boxx")
+// });
+
+const handleSearch = (event) => {
+    console.log("hello BOxx")
+}
