@@ -29,7 +29,7 @@ document.getElementById("handleADD").addEventListener("click", (event) => {
     const allComments = document.getElementsByClassName("child");
     for(const element of allComments) {
         element.addEventListener("click", (e) => {
-            console.log(e.target);
+            e.target.parentNode.removeChild(element);
         });
     }
 
