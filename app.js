@@ -27,13 +27,23 @@ document.getElementById("handleADD").addEventListener("click", (event) => {
     document.getElementById("search-box").value = "";
 
     const allComments = document.getElementsByClassName("child");
-    for(const element of allComments) {
+    for (const element of allComments) {
         element.addEventListener("click", (e) => {
             e.target.parentNode.removeChild(element);
         });
     }
 
 });
+
+
+fetch("https://jsonplaceholder.typicode.com/users")
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+    })
+
+
+
 
 // const handleSearch = (event) => {
 //     console.log("hello BOxx")
