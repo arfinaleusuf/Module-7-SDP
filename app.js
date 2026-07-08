@@ -13,17 +13,25 @@
 //     }
 // }
 
-document.getElementById("handleADD").addEventListener("click",(event)=>{
+document.getElementById("handleADD").addEventListener("click", (event) => {
     const inputValue = document.getElementById("search-box").value;
 
-    const container = document.getElementById("comment_container");2
+    const container = document.getElementById("comment_container"); 2
 
     const p = document.createElement("p");
+    p.classList.add("child")
     p.innerText = inputValue;
 
     container.appendChild(p);
 
     document.getElementById("search-box").value = "";
+
+    const allComments = document.getElementsByClassName("child");
+    for(const element of allComments) {
+        element.addEventListener("click", (e) => {
+            console.log(e.target);
+        });
+    }
 
 });
 
