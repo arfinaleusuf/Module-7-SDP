@@ -48,5 +48,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
 const displayData = (userData) => {
     const container = document.getElementById("userdata-container");
 
-
+    userData.forEach(user => {
+        const div = document.createElement("div");
+    });
 }
