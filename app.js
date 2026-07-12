@@ -39,9 +39,14 @@ document.getElementById("handleADD").addEventListener("click", (event) => {
 fetch("https://jsonplaceholder.typicode.com/users")
     .then(res => res.json())
     .then(data => {
-        console.log(data)
+        displayData(data)
     })
     .catch((error) => {
         console.log(err);
     });
 
+const displayData = (userData) => {
+    const container = document.getElementById("userdata-container");
+
+
+}
