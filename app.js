@@ -50,6 +50,8 @@ const displayData = (userData) => {
 
     userData.forEach(user => {
         const div = document.createElement("div");
+        div.classList.add("user");
+
         div.innerHTML = `
         <h4> title </h4>
         <p> </p>
