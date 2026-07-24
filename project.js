@@ -18,14 +18,15 @@ const displayProduct = (products) => {
         <h3>${product.price}</h3>
         <p>${product.description.slice(0, 50)}</p>
         <button>details</button>
-        <button>add to card</button>
+        <button onclick="handleAddtoCart('${product.title}, ${product.price}')" >add to card</button>
         `;
         productContainer.appendChild(div)
     });
+};
+
+const handleAddtoCart = (name,price) => {
+    console.log(name,price);
 }
-
-
-
 
 
 loadAllProduct()
